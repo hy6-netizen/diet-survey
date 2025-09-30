@@ -7,7 +7,7 @@ function App() {
     <div className="min-h-screen bg-ivory">
       <Header />
       <Banner />
-      <main className="py-6">
+      <main className="py-6 px-4">
         <SurveyContainer />
       </main>
     </div>

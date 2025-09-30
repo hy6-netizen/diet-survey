@@ -36,7 +36,7 @@ const CheckboxGroup: React.FC<CheckboxGroupProps> = ({
             onChange={(e) => handleChange(option, e.target.checked)}
             className="w-5 h-5 text-point focus:ring-point border-gray-300 rounded"
           />
-          <span className="text-dark-brown">{option}</span>
+          <span className="text-dark-brown text-base">{option}</span>
         </label>
       ))}
     </div>

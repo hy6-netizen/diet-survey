@@ -28,7 +28,7 @@ const RadioGroup: React.FC<RadioGroupProps> = ({
             onChange={(e) => onChange(e.target.value)}
             className="w-5 h-5 text-point focus:ring-point border-gray-300"
           />
-          <span className="text-dark-brown">{option}</span>
+          <span className="text-dark-brown text-base">{option}</span>
         </label>
       ))}
     </div>

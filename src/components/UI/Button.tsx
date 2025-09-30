@@ -17,10 +17,10 @@ const Button: React.FC<ButtonProps> = ({
   className = '',
   isShaking = false,
 }) => {
-  const baseClasses = 'w-full py-3 px-4 rounded-lg font-medium transition-all duration-200 min-h-[44px]';
+  const baseClasses = 'w-full py-3 px-4 rounded-lg font-bold text-base transition-all duration-200 min-h-[44px]';
 
   const variantClasses = {
-    primary: 'bg-point text-dark-brown hover:bg-point-hover disabled:bg-gray-300 disabled:text-gray-500',
+    primary: 'bg-point text-white hover:bg-point-hover disabled:bg-gray-300 disabled:text-gray-500',
     secondary: 'bg-gray-200 text-dark-brown hover:bg-gray-300',
   };
 

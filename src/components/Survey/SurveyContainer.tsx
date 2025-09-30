@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import type { SurveyData } from '../../types/survey';
 import { useSurveyValidation } from '../../hooks/useSurveyValidation';
 import { useSurveySubmit } from '../../hooks/useSurveySubmit';
@@ -31,6 +31,11 @@ const SurveyContainer: React.FC = () => {
     setData(prev => ({ ...prev, [field]: value }));
     clearError(field);
   };
+
+  // 자동 스크롤
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [currentStep]);
 
   const handleNext = () => {
     if (validateStep(currentStep, data)) {
@@ -71,7 +76,7 @@ const SurveyContainer: React.FC = () => {
   };
 
   return (
-    <div className="max-w-md mx-auto p-4">
+    <div className="max-w-md mx-auto">
       <ProgressBar currentStep={currentStep} totalSteps={totalSteps} />
 
       <QuestionCard

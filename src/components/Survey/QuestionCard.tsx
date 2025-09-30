@@ -102,15 +102,15 @@ const QuestionCard: React.FC<QuestionCardProps> = ({
   };
 
   return (
-    <div className="bg-white rounded-xl p-6 shadow-sm animate-fade-in-up">
-      <h2 className="text-lg font-semibold text-dark-brown mb-6 leading-relaxed">
+    <div className="bg-white rounded-xl p-6 shadow-lg animate-fade-in-up">
+      <h2 className="text-lg font-bold text-dark-brown mb-6 leading-relaxed">
         {question.title}
       </h2>
 
       {renderInput()}
 
       {error && (
-        <p className="mt-3 text-error text-sm font-medium">
+        <p className="mt-3 text-error text-xs font-medium">
           {error}
         </p>
       )}
