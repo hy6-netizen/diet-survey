@@ -4,8 +4,12 @@ const Header: React.FC = () => {
   return (
     <header className="bg-white shadow-sm border-b border-gray-100 fixed top-0 left-0 right-0 z-50">
       <div className="max-w-md mx-auto px-4 py-3 flex justify-between items-center">
-        <a href="https://hanclinic.site" className="text-dark-brown font-bold text-lg">
-          로고
+        <a href="https://hanclinic.site" className="flex items-center">
+          <img
+            src="/logo.png"
+            alt="현우한의원"
+            className="h-8 w-auto"
+          />
         </a>
         <div className="flex gap-2">
           <a
