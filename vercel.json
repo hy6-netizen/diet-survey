@@ -1,5 +1,12 @@
 {
   "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
+    {
+      "source": "/diet-survey2/:path*",
+      "destination": "/diet-survey2/:path*"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
   ]
 }
